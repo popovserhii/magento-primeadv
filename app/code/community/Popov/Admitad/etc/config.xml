@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Popov_Admitad>
+            <version>0.1.0</version>
+        </Popov_Admitad>
+    </modules>
+    <global>
+        <helpers>
+            <popov_admitad>
+                <class>Popov_Admitad_Helper</class>
+            </popov_admitad>
+        </helpers>
+        <blocks>
+            <popov_admitad>
+                <class>Popov_Admitad_Block</class>
+            </popov_admitad>
+        </blocks>
+        <models>
+            <popov_admitad>
+                <class>Popov_Admitad_Model</class>
+                <!--<resourceModel>popov_base_resource</resourceModel>-->
+            </popov_admitad>
+        </models>
+    </global>
+
+    <frontend>
+        <routers>
+            <popov_admitad>
+                <use>standard</use>
+                <args>
+                    <module>Popov_Admitad</module>
+                    <frontName>retag</frontName>
+                </args>
+            </popov_admitad>
+        </routers>
+        <layout>
+            <updates>
+                <popov_admitad>
+                    <file>popov/retag.xml</file>
+                </popov_admitad>
+            </updates>
+        </layout>
+    </frontend>
+
+    <retargeting>
+        <modules>
+            <Popov_Admitad />
+        </modules>
+    </retargeting>
+</config>
