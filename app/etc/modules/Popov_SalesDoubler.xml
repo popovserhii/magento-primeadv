@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Popov_SalesDoubler>
+			<active>true</active>
+			<codePool>community</codePool>
+      <depends>
+        <Popov_Retag />
+      </depends>
+		</Popov_SalesDoubler>
+	</modules>
+</config>
