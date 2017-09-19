@@ -1,0 +1,16 @@
+{
+    "name": "popov/magento-sales-doubler",
+    "type": "magento-module",
+    "license":"MIT Licence",
+    "description":"SalesDoubler Retargeting",
+    "authors":[{
+        "name":"Serhii Popov",
+        "email":"popow.serhii@gmail.com"
+    }],
+    "extra": {
+        "map": [
+          ["app/etc/modules/Popov_SalesDoubler.xml", "app/etc/modules/Popov_SalesDoubler.xml"],
+          ["app/code/community/Popov/Admitad/", "app/code/community/Popov/Admitad/"]
+		]
+    }
+}
