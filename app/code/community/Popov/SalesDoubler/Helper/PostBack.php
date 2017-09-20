@@ -3,12 +3,12 @@
 /**
  * Enter description here...
  *
- * @category Agere
- * @package Agere_<package>
- * @author Popov Sergiy <popov@agere.com.ua>
+ * @category Popov
+ * @package Popov_<package>
+ * @author Popov Sergiy <popow.serhii@gmail.com>
  * @datetime: 07.06.2017 17:48
  */
-class Popov_SalesDoubler_Helper_PostBack
+class Popov_SalesDoubler_Helper_PostBack extends Popov_Retag_Helper_PostBack
 {
     public function send()
     {
@@ -27,7 +27,7 @@ class Popov_SalesDoubler_Helper_PostBack
             'token' => Mage::getStoreConfig('popov_salesDoubler/settings/postback_key')
         ];
 
-        Mage::helper('popov_salesDoubler/postBack')->send($backUrl, $post);
+        parent::send($backUrl, $post);
 
     }
 }
