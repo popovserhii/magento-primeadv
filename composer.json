@@ -10,7 +10,7 @@
     "extra": {
         "map": [
           ["app/etc/modules/Popov_SalesDoubler.xml", "app/etc/modules/Popov_SalesDoubler.xml"],
-          ["app/code/community/Popov/Admitad/", "app/code/community/Popov/Admitad/"]
+          ["app/code/community/Popov/SalesDoubler/", "app/code/community/Popov/SalesDoubler/"]
 		]
     }
 }

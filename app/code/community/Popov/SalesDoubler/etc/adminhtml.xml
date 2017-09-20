@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <popov_salesDoubler translate="title" module="popov_salesDoubler">
+                                        <title>Marketing Tags</title>
+                                        <sort_order>100</sort_order>
+                                    </popov_salesDoubler>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+
+        </resources>
+    </acl>
+</config>
