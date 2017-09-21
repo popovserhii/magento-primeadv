@@ -19,15 +19,14 @@ class Popov_SalesDoubler_Helper_PostBack extends Popov_Retag_Helper_PostBack
         $order = Mage::getModel('sales/order')->load(Mage::getSingleton('checkout/session')->getLastOrderId());
 
         $backUrl = rtrim(Mage::getStoreConfig('popov_salesDoubler/settings/postback_url'), '/') . '/' . $cookie->get('AFF_SUB');
-
+        $amount = $order->getGrandTotal() - $order->getShippingAmount() - $order->getShippingTaxAmount();
         $post = [
             //'action_id' => $cookie->get('AFF_ID'),
-            'trans_id' => $order->getId(),
-            'sale_amount' => $order->getGrandTotal(),
+            'trans_id' => $order->getIncrementId(),
+            'sale_amount' => $amount,
             'token' => Mage::getStoreConfig('popov_salesDoubler/settings/postback_key')
         ];
 
         parent::send($backUrl, $post);
-
     }
 }
