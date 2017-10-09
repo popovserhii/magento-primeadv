@@ -9,8 +9,8 @@
     }],
     "extra": {
         "map": [
-          ["app/etc/modules/Popov_SalesDoubler.xml", "app/etc/modules/Popov_SalesDoubler.xml"],
-          ["app/code/community/Popov/SalesDoubler/", "app/code/community/Popov/SalesDoubler/"]
+          ["app/etc/modules/Popov_Primeadv.xml", "app/etc/modules/Popov_Primeadv.xml"],
+          ["app/code/community/Popov/Primeadv/", "app/code/community/Popov/Primeadv/"]
 	]
     }
 }
