@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Popov_Primeadv>
+            <version>0.1.0</version>
+        </Popov_Primeadv>
+    </modules>
+    <global>
+        <helpers>
+            <popov_primeadv>
+                <class>Popov_Primeadv_Helper</class>
+            </popov_primeadv>
+        </helpers>
+        <blocks>
+            <popov_primeadv>
+                <class>Popov_Primeadv_Block</class>
+            </popov_primeadv>
+        </blocks>
+        <models>
+            <popov_primeadv>
+                <class>Popov_Primeadv_Model</class>
+            </popov_primeadv>
+        </models>
+    </global>
+
+    <!--<frontend>
+        <layout>
+            <updates>
+                <popov_primeadv>
+                    <file>popov/retag.xml</file>
+                </popov_primeadv>
+            </updates>
+        </layout>
+    </frontend>-->
+
+    <retargeting>
+        <modules>
+            <Popov_Primeadv>
+                <utm_uid_name>transaction_id</utm_uid_name>
+                <utm_source>primelead</utm_source>
+                <utm_medium>cpa</utm_medium>
+            </Popov_Primeadv>
+        </modules>
+    </retargeting>
+</config>

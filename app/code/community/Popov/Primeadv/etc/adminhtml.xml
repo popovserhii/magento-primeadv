@@ -9,10 +9,10 @@
                         <children>
                             <config>
                                 <children>
-                                    <popov_salesDoubler translate="title" module="popov_salesDoubler">
-                                        <title>Sales Doubler Tags</title>
+                                    <popov_primeadv translate="title" module="popov_primeadv">
+                                        <title>Primeadv Tags</title>
                                         <sort_order>100</sort_order>
-                                    </popov_salesDoubler>
+                                    </popov_primeadv>
                                 </children>
                             </config>
                         </children>

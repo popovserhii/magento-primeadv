@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <config>
 	<sections>
-		<popov_salesDoubler module="popov_salesDoubler" translate="label">
-			<label>Sales Doubler Tags</label>
+		<popov_primeadv module="popov_primeadv" translate="label">
+			<label>Primeadv</label>
 			<sort_order>200</sort_order>
 			<show_in_default>1</show_in_default>
 			<show_in_website>1</show_in_website>
@@ -10,7 +10,7 @@
 			<tab>retargeting</tab>
 			<groups>
                 <settings translate="label">
-                    <label>Sales Doubler Settings</label>
+                    <label>Primeadv Settings</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>10</sort_order>
                     <show_in_default>1</show_in_default>
@@ -26,14 +26,6 @@
                             <show_in_store>1</show_in_store>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
                         </enabled>
-                        <postback_key translate="label comment">
-                            <label>PostBack Token</label>
-                            <frontend_type>text</frontend_type>
-                            <sort_order>20</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                        </postback_key>
                         <postback_url translate="label comment">
                             <label>PostBack URL</label>
                             <frontend_type>text</frontend_type>
@@ -45,6 +37,6 @@
                     </fields>
                 </settings>
 			</groups>
-		</popov_salesDoubler>
+		</popov_primeadv>
 	</sections>
 </config>
