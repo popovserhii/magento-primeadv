@@ -11,7 +11,7 @@ class Popov_Primeadv_Helper_Data extends Mage_Core_Helper_Abstract
 {
     public function setCookies() {
         $request = Mage::app()->getRequest();
-        if (($request->get('utm_source') !== 'primelead') && !$request->get('transaction_id')) {
+        if (!$request->get('transaction_id')) {
             return false;
         }
 
